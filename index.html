@@ -187,7 +187,7 @@
       <div><b>Puntaje</b><span>U1 4 · U2 4 · Caso 2</span></div>
       <div><b>Cátedra</b><span>Fund. de Economía II · UCES</span></div>
     </div>
-    <div class="fuera"><b>No entra:</b> U3 a U7 · IPC e inflación · balanza de pagos · objetivos de la macro · por qué crecen las economías · contabilidad nacional · índices mayoristas · economía de 2 sectores · cálculo de la renta personal y la Yd · flujo circular.</div>
+    <div class="fuera"><b>No entra:</b> U3 a U7 · balanza de pagos · objetivos de la macro · por qué crecen las economías · contabilidad nacional · índices mayoristas · economía de 2 sectores · cálculo de la renta personal y la Yd · flujo circular.</div>
     <div class="star"><span class="lbl">Reglas de la profe</span><b>Paso a paso obligatorio</b>: si ponés solo el resultado, te anula el ejercicio. Primero copiás los datos y después la fórmula. Llevá calculadora (el celular no está permitido) y tu formulero, solo con símbolos.</div>
   </header>
 
@@ -467,6 +467,26 @@
     </div>
 
     <div class="card">
+      <p class="h-main"><span class="dot"></span>IPC y tasa de inflación interanual<span class="tag">Lección 9 bis</span></p>
+      <ul>
+        <li><b>IPC (índice de precios al consumidor):</b> mide la variación de precios de una canasta representativa de bienes y servicios consumidos por los hogares.</li>
+        <li><b>Tasa de inflación:</b> variación porcentual del IPC entre dos períodos.</li>
+        <li><b>Interanual:</b> compara un mes con el <b>mismo mes del año anterior</b>.</li>
+      </ul>
+      <div class="fbox">\(\text{IPC} = \dfrac{\text{Costo canasta actual}}{\text{Costo canasta año base}} \times 100\)<small>\(\text{Tasa de inflación} = \dfrac{\text{IPC}_{\text{actual}} - \text{IPC}_{\text{anterior}}}{\text{IPC}_{\text{anterior}}} \times 100\)</small></div>
+      <details class="ej" open><summary>Ejemplo</summary><div class="body">
+        <div class="calc">\[\begin{aligned}
+&\text{IPC}_{\text{sep-25}} = 200 \quad \text{IPC}_{\text{sep-26}} = 250\\[6pt]
+&\text{Tasa} = \dfrac{\text{IPC}_{\text{actual}} - \text{IPC}_{\text{anterior}}}{\text{IPC}_{\text{anterior}}} \times 100\\[4pt]
+&\text{Tasa} = \dfrac{250 - 200}{200} \times 100\\[4pt]
+&\text{Tasa} = \dfrac{50}{200} \times 100 = 25\,\%
+\end{aligned}\]</div>
+      </div></details>
+      <div class="star"><span class="lbl">Respuesta modelo (1.1b)</span>"El IPC mide la variación de los precios de una canasta representativa de bienes y servicios que consumen los hogares. La tasa de inflación interanual es la variación porcentual del IPC de un mes respecto del mismo mes del año anterior: la diferencia entre ambos IPC, dividida por el IPC del año anterior y multiplicada por 100."</div>
+      <div class="note"><b>Error de tu Resumen:</b> la resta sola (250 − 200 = 50) <b>no</b> es la tasa. Hay que dividir por el IPC anterior.</div>
+    </div>
+
+    <div class="card">
       <p class="h-main"><span class="dot"></span>PIB a precios de mercado y a costo de factores<span class="tag">Lección 10</span></p>
       <p class="def"><b>PIB:</b> valor total de los bienes y servicios <b>finales</b> producidos <b>dentro de un país</b> en un período determinado, sin importar la nacionalidad de quien los produce.</p>
       <ul>
@@ -692,7 +712,7 @@
 
 <script>
   /* ============ AUTO-ACTUALIZADOR ============ */
-  const BUILD='2026-09-24-5';
+  const BUILD='2026-09-24-6';
   async function checkUpdate(){
     try{
       const r=await fetch(location.pathname+'?_cb='+Math.floor(Date.now()/30000),{cache:'no-store'});
@@ -764,6 +784,11 @@
      {q:'¿Qué es el PIB real?',a:'El PIB sin el efecto de la inflación; permite saber si la producción aumentó o disminuyó.'},
      {q:'¿Qué mide el deflactor del PIB?',a:'La variación de los precios de todos los bienes y servicios producidos en una economía.'},
      {q:'¿Cuál es el mejor indicador del crecimiento?',a:'El PIB real, porque está ajustado por la inflación.'}
+   ]},
+   {u:'L9 bis · IPC e inflación',c:'var(--m3)',items:[
+     {q:'¿Qué mide el IPC?',a:'La variación de precios de una canasta representativa de bienes y servicios consumidos por los hogares.'},
+     {q:'¿Cómo se calcula la tasa de inflación?',a:'((IPC actual − IPC anterior) / IPC anterior) × 100.'},
+     {q:'¿Qué significa que la inflación sea interanual?',a:'Que compara un mes con el mismo mes del año anterior.'}
    ]},
    {u:'L10 · PIB pm y cf',c:'var(--m3)',items:[
      {q:'¿Qué es el PIB a precios de mercado?',a:'Los bienes y servicios finales producidos por una economía en un período, expresados al precio que paga el consumidor.'},
