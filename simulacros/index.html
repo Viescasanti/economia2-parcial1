@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulacros resueltos — Economía II</title>
+<style>
+  :root { --tinta:#111; --gris:#555; --linea:#d5dbe3; --azul:#1f2d4d; --azul-suave:#eef3f8; --resp:#fbf8ef; --resp-borde:#b8a26a; --fix:#fff1a8; }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 70px; }
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--tinta); background: #f4f5f7; line-height: 1.45; font-size: 15px; }
+  header { position: sticky; top: 0; z-index: 10; background: var(--azul); color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 20px; flex-wrap: wrap; }
+  header h1 { font-size: 15px; margin: 0; font-weight: bold; letter-spacing: .02em; }
+  .tabs { display: flex; gap: 6px; }
+  .tabs button { font: inherit; font-size: 14px; font-weight: bold; padding: 7px 16px; border: 2px solid #fff; background: transparent; color: #fff; border-radius: 4px; cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: #fff; color: var(--azul); }
+  main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+  .examen { display: none; background: #fff; padding: 28px 32px; border: 1px solid var(--linea); }
+  .examen.activo { display: block; }
+  .origen { font-size: 12.5px; color: var(--gris); margin: 0 0 4px; text-transform: uppercase; letter-spacing: .05em; }
+  .examen > h2.titulo { font-size: 17px; text-align: center; margin: 4px 0 18px; }
+  .leyenda { font-size: 13px; background: #f7f7f7; border: 1px solid #ddd; padding: 8px 12px; margin: 0 0 22px; }
+  h3.seccion { font-size: 15px; margin: 30px 0 8px; padding-bottom: 4px; border-bottom: 2px solid var(--azul); }
+  .parte { font-weight: bold; margin: 16px 0 6px; }
+  .consigna { font-weight: bold; margin: 8px 0; }
+  .item { margin: 14px 0 0; }
+  .item .preg { margin: 0 0 8px; }
+  .resp { background: var(--resp); border-left: 4px solid var(--resp-borde); padding: 10px 14px; margin: 0 0 6px; }
+  .resp .rotulo { font-size: 11.5px; font-weight: bold; color: #7a6530; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 6px; }
+  .resp p { margin: 0 0 8px; }
+  .resp p:last-child { margin-bottom: 0; }
+  .calc { font-family: "Cambria Math", Cambria, Georgia, serif; font-size: 16px; margin: 4px 0 10px; }
+  .calc div { padding: 1px 0; }
+  .calc .sep { height: 8px; }
+  ul.fx { margin: 4px 0 10px; padding-left: 22px; }
+  ul.fx li { margin: 2px 0; }
+  ul.def { margin: 0 0 8px; padding-left: 20px; }
+  table.datos { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 8px 0 14px; }
+  table.datos th { background: var(--azul); color: #fff; text-align: left; padding: 6px 9px; }
+  table.datos td { padding: 5px 9px; border-bottom: 1px solid var(--linea); }
+  table.datos td:last-child { text-align: right; white-space: nowrap; }
+  .esc { background: var(--azul-suave); border-left: 5px solid var(--azul); padding: 10px 14px; margin: 8px 0 14px; font-size: 14px; }
+  .esc p { margin: 0 0 3px; }
+  @media (max-width: 600px) {
+    body { font-size: 14.5px; }
+    header { padding: 8px 12px; }
+    .examen { padding: 18px 14px; }
+    .calc { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Economía II · Simulacros resueltos</h1>
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="p1">Parcial 1</button>
+    <button role="tab" aria-selected="false" data-tab="p2">Parcial 2</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- =============================== PARCIAL 1 =============================== -->
+<section class="examen activo" id="p1">
+  <p class="origen">Parcial 1 · Modelo B (generado por NotebookLM)</p>
+  <h2 class="titulo">SIMULACRO DE EVALUACIÓN PARCIAL: UNIDADES 1 Y 2 — MODELO B</h2>
+
+  <h3 class="seccion">SECCIÓN 1: UNIDAD 1 - MACROECONOMÍA Y MODELO OA-DA (Puntaje: 4,0 Puntos)</h3>
+  <div class="parte">Parte A: Desarrollo Conceptualmente Teórico (1,5 Puntos)</div>
+  <div class="consigna">Consigna 1.1: Responda los siguientes ítems teóricos:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) Oferta Agregada en el Corto y Largo Plazo (0,75 pts):</b> Defina la Oferta Agregada (OA) y explique la diferencia en su pendiente entre el corto plazo y el largo plazo. Justifique qué representa el nivel de producción en el largo plazo.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Es la relación entre el NGP y la producción de los bienes y servicios que los productores están dispuestos a producir. Esta se puede interpretar como el PBI.</p>
+      <p>En el corto plazo la Oferta agregada tiene siempre pendiente positiva, porque existen costos de producción fijos.</p>
+      <p>En el largo plazo la curva de OA tiene una pendiente vertical, esto es debido a que a largo plazo se alcanza un pleno uso de los factores productivos, es decir, alcanzamos a utilizar toda nuestra capacidad productiva.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Indicadores Laborales (0,75 pts):</b> Defina la Población Económicamente Activa (PEA) y explique la condición necesaria para que una persona sin empleo sea contabilizada dentro de la Población Desocupada (PD). Indique la fórmula de la Tasa de Desempleo.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>La población económicamente activa PEA, es la población que se encuentra en edad y actualmente se encuentra trabajando y las que no están trabajando pero están en búsqueda de trabajo. Para que una persona sin empleo sea contabilizada dentro de la PD, el requisito es que esta se debe encontrar buscando activamente trabajo.</p>
+      <div class="calc"><div>Fórmula de TD = (PD / PEA) × 100</div></div>
+    </div>
+  </div>
+
+  <div class="parte">Parte B: Ejercicio Práctico Cuantitativo (2,5 Puntos)</div>
+  <div class="consigna">Consigna 1.2: Dadas las siguientes funciones representativas del mercado macroeconómico de un país:</div>
+  <ul class="fx">
+    <li><b>Demanda Agregada Inicial:</b> DA = 2.000 - 60 P</li>
+    <li><b>Oferta Agregada Inicial (Corto Plazo):</b> OA = 500 + 40 P</li>
+  </ul>
+
+  <div class="item">
+    <p class="preg"><b>a) Equilibrio Inicial (0,75 pts):</b> Determine analíticamente el Nivel General de Precios de equilibrio (P*) y el Nivel de Producción de equilibrio (Y*). Muestre todo el desarrollo algebraico y verifique el resultado en ambas ecuaciones.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>DA = 2.000 − 60 P</div>
+        <div>OA = 500 + 40 P</div>
+        <div class="sep"></div>
+        <div>2000 − 60P = 500 + 40P</div>
+        <div>−40P − 60P = 500 − 2000</div>
+        <div>−100P = −1500</div>
+        <div>P = −1500 / −100</div>
+        <div>P = 15</div>
+        <div class="sep"></div>
+        <div>Y = 2000 − (60 × 15)</div>
+        <div>Y = 1.100</div>
+        <div class="sep"></div>
+        <div>Verificación: 500 + (40 × 15) = 1.100</div>
+      </div>
+      <p>Respuesta: Para el Nivel General de Precios de 15$, la cantidad demandada por todos los agentes y ofrecidos por las empresas es de 1.100</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Shock de Demanda Agregada (0,85 pts):</b> Un incremento en el Gasto Público (G) desplaza la función de Demanda Agregada a: <b>DA' = 2.300 - 60 P</b>. Mantenida constante la Oferta Agregada inicial, determine analíticamente el nuevo punto de equilibrio (P**, Y**).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>DA' = 2.300 − 60 P</div>
+        <div>OA = 500 + 40 P</div>
+        <div class="sep"></div>
+        <div>2300 − 60 P = 500 + 40 P</div>
+        <div>−60P − 40P = 500 − 2300</div>
+        <div>−100P = −1800</div>
+        <div>P = −1800 / −100</div>
+        <div>P = 18</div>
+        <div class="sep"></div>
+        <div>Y = 2300 − (60 × 18)</div>
+        <div>Y = 1.220</div>
+        <div class="sep"></div>
+        <div>Verificación: 500 + (40 × 18) = 1.220</div>
+      </div>
+      <p>Respuesta: Para la nueva demanda agregada, el Nivel General de Precios es de 18$, la cantidad demandada por todos los agentes y ofrecidos por las empresas es de 1.220</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>c) Análisis Económico y Comercial (0,90 pts):</b> Compare ambos equilibrios en una tabla. ¿Qué fenómeno macroeconómico se produce sobre los precios y el nivel de actividad? Explique qué estrategia comercial y de precios o financiación debería implementar una empresa para aprovechar esta coyuntura.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Para este caso puntual ocurrió un aumento generalizado de la demanda por los agentes aumentando esta de 2.000 a 2.300. Mientras que la oferta se mantuvo estática. Entonces el fenómeno macroeconómico que ocurre es que se genera un desplazamiento de la curva de la DA hacia la derecha, afectado directamente esto al punto de equilibrio entre la DA y la OA. Entonces lo que antes con una DA de 2000, el NGP era de 15$ por unidad, mientras que ahora al mantenerse estática la OA y aumentar la demanda, el NGP aumentó a 18. Ya que con la misma OA se deben satisfacer a más DA.</p>
+      <p>Para aprovechar esta coyuntura la empresa no debería ofrecer financiaciones sin un fin económico, sino más bien deberían tener unos intereses no tan competitivos ya que la demanda aumentó y no necesitamos mejorar la oferta. La estrategia comercial podría ser jugar con el poco stock debido a la alta demanda para fomentar la compra.</p>
+    </div>
+  </div>
+
+  <h3 class="seccion">SECCIÓN 2: UNIDAD 2 - CONTABILIDAD NACIONAL Y MODELOS POR SECTORES (Puntaje: 4,0 Puntos)</h3>
+  <div class="parte">Parte A: Fundamentos Teóricos de Cuentas Nacionales (1,5 Puntos)</div>
+  <div class="consigna">Consigna 2.1: Responda conceptualmente a los siguientes planteos:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) PIB Nominal, PIB Real y Deflactor (0,75 pts):</b> Diferencie el PIB nominal del PIB real. Indique cuál es el mejor indicador para evaluar el crecimiento económico de un país y explique qué mide el Deflactor del PIB.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>La diferencia es que el PBI Nominal no tiene en cuenta en su cálculo la inflación. Por ende se considera un cálculo del nivel de producción de bs y servicios finales actuales del país impreciso. Mientras que el PBI Real sí tiene en cuenta la inflación, esto debido a que la fórmula contrasta la relación del PBI nominal contra el deflactor, todo esto, multiplicado por 100, dándonos un resultado preciso del crecimiento o decrecimiento del PBI con la inflación tenida en cuenta. Y por otro lado el Deflactor se encarga de la medición de la variación de los precios de los bienes y servicios finales producidos en una economía. Y la forma de obtenerlo es calculando la relación del PBI nominal contra el PBI real multiplicado por 100.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Sectores Económicos e Identidad Macroeconómica (0,75 pts):</b> Explique qué representa cada bloque de la igualdad <b>A – I = (G + TR – T) + XN</b>. Indique qué significa que el bloque del Sector Público (G + TR – T) arroje un resultado positivo.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <ul class="def">
+        <li>A = Ahorro del sector privado</li>
+        <li>I = Inversión Bruta Interna</li>
+        <li>G = Gasto Público</li>
+        <li>TR = Transferencias del estado a las familias</li>
+        <li>T = Impuestos Personales</li>
+        <li>XN = Exportaciones Netas</li>
+      </ul>
+      <p>Si el bloque del sector público arroja un resultado positivo quiere decir que el estado está en déficit, esto debido a que aunque el valor sea positivo, es porque algebraicamente el gasto y las transferencias se representan con símbolo positivo, pero son un gasto para el estado por ende están gastando más de lo que ingresa por los impuestos (T).</p>
+    </div>
+  </div>
+
+  <div class="parte">Parte B: Ejercicio Práctico Cuantitativo por Sectores (2,5 Puntos)</div>
+  <div class="consigna">Consigna 2.2: Se disponen de los siguientes datos macroeconómicos anuales correspondientes a una economía abierta (en millones de pesos):</div>
+  <table class="datos">
+    <tr><th>Variable / Macromagnitud</th><th>Valor (en Millones de $)</th></tr>
+    <tr><td>Consumo Privado (C)</td><td>$ 210.000</td></tr>
+    <tr><td>Inversión Bruta Interna (I)</td><td>$ 65.000</td></tr>
+    <tr><td>Gasto Público en Bienes y Servicios (G)</td><td>$ 80.000</td></tr>
+    <tr><td>Exportaciones de Bienes y Servicios (X)</td><td>$ 95.000</td></tr>
+    <tr><td>Importaciones de Bienes y Servicios (M)</td><td>$ 75.000</td></tr>
+    <tr><td>Impuestos Indirectos (Ti)</td><td>$ 40.000</td></tr>
+    <tr><td>Subvenciones a Empresas (Subv)</td><td>$ 10.000</td></tr>
+    <tr><td>Rentas de Residentes Nacionales en el Exterior (RRN)</td><td>$ 8.000</td></tr>
+    <tr><td>Rentas de Residentes Extranjeros en el País (RRE)</td><td>$ 14.000</td></tr>
+    <tr><td>Depreciación o Consumo de Capital Fijo (D)</td><td>$ 15.000</td></tr>
+    <tr><td>Impuestos Directos / Personales (T)</td><td>$ 55.000</td></tr>
+    <tr><td>Transferencias del Estado a Familias (TR)</td><td>$ 25.000</td></tr>
+  </table>
+  <div class="consigna">A partir de los datos brindados, efectúe analíticamente los siguientes cálculos mostrando todo el procedimiento:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) PIB a Precios de Mercado (0,50 pts):</b> Calcule el Producto Interno Bruto a precios de mercado (PIB pm) por el Método del Gasto. Exprese la fórmula correspondiente.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PIBpm = C + I + G + (X − M)</div>
+        <div>PIBpm = 210.000 + 65.000 + 80.000 + 20.000 = 375.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) PIB a Costo de Factores (0,60 pts):</b> Obtenga el Producto Interno Bruto a costo de factores (PIB cf). Explique brevemente por qué los impuestos indirectos distorsionan los precios de mercado respecto a la remuneración de factores.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PIBcf = PIB pm − Ti + Subv</div>
+        <div>PIBcf = 375.000 − 40.000 + 10.000 = 345.000</div>
+      </div>
+      <p>Los impuestos distorsionan los precios del mercado debido a que estos no forman parte de la utilidad de la empresa al cobrarlos, solamente los recaudan para liquidar estos al estado. Al no ser un ingreso para la empresa y solo un gasto para el consumidor, distorsionan porque solo es parte de la recaudación del estado.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>c) PNB pm y PNN pm (0,70 pts):</b> Calcule el Producto Nacional Bruto a precios de mercado (PNB pm) y el Producto Nacional Neto a precios de mercado (PNN pm), detallando las fórmulas aplicadas.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PNBpm = PIB pm + RRN − RRE</div>
+        <div>PNBpm = 375.000 + 8.000 − 14.000 = 369.000</div>
+        <div class="sep"></div>
+        <div>PNNpm = PNB pm − Depreciación</div>
+        <div>PNNpm = 369.000 − 15.000 = 354.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>d) Ahorro Privado (0,70 pts):</b> Utilizando la igualdad <b>A – I = (G + TR – T) + XN</b>, determine analíticamente el valor del Ahorro Privado (A).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>A − I = (G + TR − T) + XN</div>
+        <div>A − 65.000 = (80.000 + 25.000 − 55.000) + 20.000</div>
+        <div>A = 65.000 + 50.000 + 20.000</div>
+        <div>A = 135.000</div>
+      </div>
+      <p>El ahorro producido por el privado es de 135.000. Con estos se financian el déficit del estado y el sector externo.</p>
+    </div>
+  </div>
+
+  <h3 class="seccion">SECCIÓN 3: CASO INTEGRADOR Y APLICACIÓN A MARKETING (Puntaje: 2,0 Puntos)</h3>
+  <div class="parte">Análisis de Escenario Macroeconómico de Recesión y Toma de Decisiones Estratégicas</div>
+  <div class="esc">
+    <p><b>Escenario Económico de Análisis:</b> Un informe técnico del Ministerio de Economía muestra los siguientes datos consolidados del último período anual:</p>
+    <p>• Variación del PIB Real: -3,2 % anual (caída generalizada en industria, comercio y construcción).</p>
+    <p>• Tasa de Desempleo: 9,8 % (aumento del desempleo e informalidad laboral).</p>
+    <p>• Inflación Interanual (IPC): 14,5 % (desaceleración de precios por retracción de la demanda).</p>
+    <p>• Confianza del Consumidor (ICC): caída del -18 % en la predisposición a la compra de bienes durables.</p>
+  </div>
+  <div class="consigna">En base a la información brindada, responda:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) Identificación de la Fase del Ciclo Económico (1,00 pt):</b> Determine la fase del ciclo económico en la que se encuentra la economía. Justifique su diagnóstico escribiendo una oración específica para el PIB Real (-3,2 %), la Tasa de Desempleo (9,8 %) y la Inflación (14,5 %), relacionándolo con el comportamiento esperado del consumo.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>La fase del ciclo económico en la que se encuentra la economía es de recesión. Esto debido a que ha habido una caída generalizada en el nivel de producción hasta un -3,2% anual (PBI Real) seguido a esto, debido a una caída en la industria, se vio acompañado por un aumento en el desempleo formal e informal hasta llegar a un pico de 9,8%, por ende el dinero circulante en las familias ha decaído sustancialmente, provocando esto una desaceleración en la inflación interanual deteniéndose en 14,5% debido a la baja del consumo, haciendo que los demandantes tengan poca predisposición a financiarse a largo plazo ya que su nivel de confianza también se ha visto afectado en torno al -18% para compra de bienes durables.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Estrategias Comerciales / Marketing (1,00 pt):</b> Como Gerente Comercial de una cadena de consumo masivo y supermercados, diseñe DOS acciones comerciales concretas y justifique cada una con un dato numérico específico del caso.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Como gerente comercial de consumo masivo la primera acción que diseñaría sería ofrecer productos en formato pack ahorro, como por ejemplo los cafés en paquetes para rellenar los frascos, o los detergentes para también rellenar frascos anteriores.</p>
+      <p>Y por otro lado, aumentaría la compra de toda la cadena de presentaciones de productos más pequeños, como pueden ser salsas de menor tamaño y menor costo, o productos de segundas marcas, etc.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== PARCIAL 2 =============================== -->
+<section class="examen" id="p2">
+  <p class="origen">Parcial 2 · Simulacro de la profesora</p>
+  <h2 class="titulo">SIMULACRO DE EVALUACIÓN PARCIAL: UNIDADES 1 Y 2</h2>
+
+  <h3 class="seccion">SECCIÓN 1: UNIDAD 1 - MACROECONOMÍA Y MODELO OA-DA (Puntaje: 4,0 Puntos)</h3>
+  <div class="parte">Parte A: Desarrollo Conceptualmente Teórico (1,5 Puntos)</div>
+  <div class="consigna">Consigna 1.1: Responda los siguientes ítems teóricos:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) Impacto Macroeconómicos en el Modelo OA-DA (0,75 pts):</b> Diferencie el impacto macroeconómico en la Oferta Agregada (por ejemplo, por un aumento internacional del precio de los insumos energéticos/petróleo) frente a un (ej. incremento del gasto público) que impacta en la Demanda Agregada. Explique qué ocurre en cada caso con el Nivel General de Precios (P) y el Nivel de Producción/Ingreso Real (Y).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>El aumento del gasto público generaría un desplazamiento de la DA hacia la derecha, por ende, el ingreso real de los agentes aumentaría y la demanda de los mismos también, lo que generaría un aumento en el NGP de la curva de DA. En el caso de la OA al haber un aumento en los insumos y eso representa a los factores productivos, por ende, la OA sufre un desplazamiento hacia la izquierda, repercute en el NGP ya que este aumenta debido al aumento en los costes de los factores y el nivel de producción también ha disminuido ya que los costos de los insumos van a ser más costosos. Si esta situación ocurre simultáneamente, el nivel de producción y la cantidad demandada no se verán tan afectadas ya que una situación contrarresta a la otra.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Medición de Inflación e Indicadores Laborales (0,75 pts):</b> Explique brevemente el cálculo de la Tasa de Inflación interanual utilizando el Índice de Precios al Consumidor (IPC).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>El IPC expresa el nivel general de precios al consumidor de un periodo actual con uno anterior, todo esto multiplicado por 100. Este cálculo nos permite entender la tasa de inflación ya que la tasa de inflación calcula la diferencia del IPC actual contra el anterior y la relación de esto con el IPC anterior, todo esto multiplicado por 100, nos permite entender cuánto han fluctuado los valores de los precios porcentualmente entre un periodo determinado.</p>
+    </div>
+  </div>
+
+  <div class="parte">Parte B: Ejercicio Práctico Cuantitativo (2,5 Puntos)</div>
+  <div class="consigna">Consigna 1.2: Dadas las siguientes ecuaciones representativas del mercado macroeconómico de un país:</div>
+  <ul class="fx">
+    <li><b>Demanda Agregada Inicial:</b> DA = 1.600 - 50 P</li>
+    <li><b>Oferta Agregada Inicial (Corto Plazo):</b> OA = 400 + 30 P</li>
+  </ul>
+
+  <div class="item">
+    <p class="preg"><b>a) Equilibrio Inicial (0,75 pts):</b> Determine analíticamente el Nivel General de Precios de equilibrio (P*) y el Nivel de Producción de equilibrio (Y*). Muestre todo el desarrollo algebraico.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>DA = 1.600 − 50 P</div>
+        <div>OA = 400 + 30 P</div>
+        <div class="sep"></div>
+        <div>1.600 − 50 P = 400 + 30 P</div>
+        <div>1600 − 400 = 50P + 30P</div>
+        <div>1200 = 80P</div>
+        <div>1200/80 = P</div>
+        <div>15 = P</div>
+        <div class="sep"></div>
+        <div>Y = 1.600 − 50 × 15 = 850</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Oferta Agregada (0,85 pts):</b> Un incremento generalizado en los costos logísticos y de tarifas energéticas contrae la Oferta Agregada, desplazando la función a: <b>OA' = 240 + 30 P</b>. Mantenida constante la Demanda Agregada, determine el nuevo punto de equilibrio (P**, Y**).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>DA = 1.600 − 50 P</div>
+        <div>OA' = 240 + 30 P</div>
+        <div class="sep"></div>
+        <div>1.600 − 50 P = 240 + 30 P</div>
+        <div>1600 − 240 = 50P + 30P</div>
+        <div>1360 = 80P</div>
+        <div>1360/80 = P</div>
+        <div>17 = P**</div>
+        <div class="sep"></div>
+        <div>Y** = 1.600 − 50 × 17 = 750</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>c) Análisis Económico y Comercial (0,90 pts):</b> Compare ambos equilibrios. ¿Qué fenómeno macroeconómico se produce sobre los precios y el nivel de actividad? Explique qué estrategia de optimización de costos y política de precios debería implementar una empresa industrial para amortiguar este scenario.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Al producirse un movimiento en la nueva OA los precios aumentan y la cantidad producida por las empresas disminuye, al igual que la cantidad demandada por los agentes. Por ende podríamos decir que el fenómeno macroeconómico que ocurre es un desplazamiento de la curva de la OA hacia la izquierda. En este caso al tratarse de una empresa industrial lo que deberíamos hacer es mejorar la tecnología para poder aumentar la productividad de la fábrica y por ende optimizar nuestros costos lo que nos permitiría o aumentar nuestra producción o en su defecto ganarle más a cada producto producido.</p>
+    </div>
+  </div>
+
+  <h3 class="seccion">SECCIÓN 2: UNIDAD 2 - CONTABILIDAD NACIONAL Y MODELOS POR SECTORES (Puntaje: 4,0 Puntos)</h3>
+  <div class="parte">Parte A: Fundamentos Teóricos de Cuentas Nacionales (1,5 Puntos)</div>
+  <div class="consigna">Consigna 2.1: Responda conceptualmente a los siguientes planteos de Cuentas Nacionales:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) Índices de Precios e Ingreso Disponible (0,75 pts):</b> Compare el Deflactor del PIB con el Índice de Precios al Consumidor (IPC), señalando sus diferencias principales respecto a la canasta de bienes considerada. Asimismo, defina el Ingreso Personal Disponible (Yd) y explique su relación matemática con el Consumo (C) y el Ahorro Privado (A).</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>El deflactor mide cómo cambiaron los precios de los bs y ss finales producidos en una economía mientras que el IPC mide la variación de los precios de una canasta básica representativa de los bs y ss que fueron consumidos en los hogares.</p>
+      <p>El ingreso personal disponible (Yd) es la suma de los ingresos totales de una persona sumado a los subsidios o transferencias del estado después de pagar todas sus obligaciones fiscales o impuestos.</p>
+      <p>Y respecto al ahorro y consumo, el ingreso disponible después de gastos y ayudas económicas podríamos calcularlo sumando el ahorro privado + el consumo.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Flujo Circular e Igualdad (0,75 pts):</b> Describa el Flujo Circular del Ingreso en un modelo completo de cuatro sectores (Familias, Empresas, Gobierno y Sector Externo). Explique el concepto macroeconómico según el cual A – I = (G + TR - T) + XN</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>A − I = (G + TR − T) + XN</div>
+        <div>A − 55.000 = (65.000 + 20.000 − 45.000) + 15.000</div>
+        <div>A = 55.000 + 40.000 + 15.000</div>
+        <div>A = 110.000</div>
+      </div>
+      <p>El ahorro del sector privado es positivo, con este el estado financia su déficit, ya que actualmente el estado cuenta con un déficit total de 40.000 y por contraparte el sector externo también necesita financiamiento ya que hubo un superávit en exportaciones al haber un resultado positivo por 15.000. De esta forma al tener un ahorro el sector privado de 110.000, este alcanza a financiar todo el sector público y al sector externo.</p>
+    </div>
+  </div>
+
+  <div class="parte">Parte B: Ejercicio Práctico Cuantitativo por Sectores (2,5 Puntos)</div>
+  <div class="consigna">Consigna 2.2: Se disponen de los siguientes datos macroeconómicos anuales correspondientes a una economía abierta (en millones de pesos):</div>
+  <table class="datos">
+    <tr><th>Variable / Macromagnitud</th><th>Valor (en Millones de $)</th></tr>
+    <tr><td>Consumo Privado (C)</td><td>$ 180.000</td></tr>
+    <tr><td>Inversión Bruta Interna (I)</td><td>$ 55.000</td></tr>
+    <tr><td>Gasto Público en Bienes y Servicios (G)</td><td>$ 65.000</td></tr>
+    <tr><td>Exportaciones de Bienes y Servicios (X)</td><td>$ 85.000</td></tr>
+    <tr><td>Importaciones de Bienes y Servicios (M)</td><td>$ 70.000</td></tr>
+    <tr><td>Impuestos Indirectos (Ti)</td><td>$ 35.000</td></tr>
+    <tr><td>Subvenciones a Empresas (Subv)</td><td>$ 8.000</td></tr>
+    <tr><td>Rentas de Residentes Nacionales en el Exterior (RRN)</td><td>$ 6.000</td></tr>
+    <tr><td>Rentas de Residentes Extranjeros en el País (RRE)</td><td>$ 11.000</td></tr>
+    <tr><td>Depreciación o Consumo de Capital Fijo (D)</td><td>$ 12.000</td></tr>
+    <tr><td>Impuestos Directos / Personales (T)</td><td>$ 45.000</td></tr>
+    <tr><td>Transferencias del Estado a Familias (TR)</td><td>$ 20.000</td></tr>
+  </table>
+  <div class="consigna">A partir de los datos brindados, efectúe analíticamente los siguientes cálculos:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) PIB a Precios de Mercado (0,50 pts):</b> Calcule el Producto Interno Bruto a precios de mercado (PIB pm) por el Método del Gasto. Exprese la fórmula correspondiente.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PIBpm = C + I + G + (X − M)</div>
+        <div>PIBpm = 180.000 + 55.000 + 65.000 + 15.000 = 315.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) PIB a Costo de Factores (0,60 pts):</b> Obtenga el Producto Interno Bruto a costo de factores (PIB cf). Explique brevemente por qué los impuestos indirectos distorsionan los precios de mercado respecto a la remuneración de factores.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PIB cf = PIB pm − Ti + Subv</div>
+        <div>PIB cf = 315.000 − 35.000 + 8.000 = 288.000</div>
+      </div>
+      <p>El impuesto indirecto distorsiona los precios del mercado respecto a la remuneración de los factores debido a que este simplemente causa un aumento de los precios, pero no una utilidad en la empresa. Ya que son indirectos debido a que los consumidores le pagan a la empresa los impuestos y las empresas por contraparte le liquidan los mismos al estado. Es un ingreso para el estado, pero las empresas solamente actúan como intermediarios.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>c) PNB pm y PNN pm (0,70 pts):</b> Calcule el Producto Nacional Bruto a precios de mercado (PNB pm) y el Producto Nacional Neto a precios de mercado (PNN pm), detallando el ajuste por rentas de factores y depreciación del capital.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>PNB pm = PIB pm + RRN − RRE</div>
+        <div>PNB pm = 315.000 + 6.000 − 11.000 = 310.000</div>
+        <div class="sep"></div>
+        <div>PNN pm = PNB pm − Depreciación</div>
+        <div>PNN pm = 310.000 − 12.000 = 298.000</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>d) Ahorro Privado en el Modelo de 4 Sectores (0,70 pts):</b> Utilizando la identidad fundamental macroeconómica A - I = (G + TR - T) + XN, determine analíticamente el valor del Ahorro Privado (A) necesario para sostener el equilibrio de este sistema económico.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <div class="calc">
+        <div>A − I = (G + TR − T) + XN</div>
+        <div>A − 55.000 = (65.000 + 20.000 − 45.000) + 15.000</div>
+        <div>A = 55.000 + 40.000 + 15.000</div>
+        <div>A = 110.000</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="seccion">SECCIÓN 3: CASO INTEGRADOR Y APLICACIÓN A MARKETING (Puntaje: 2,0 Puntos)</h3>
+  <div class="parte">Análisis de Escenario Macroeconómico de Reactivación y Toma de Decisiones Estratégicas</div>
+  <div class="esc">
+    <p><b>Escenario Económico de Análisis (Modelo de Expansión):</b> En el marco del último informe macroeconómico del Ministerio de Economía y el Banco Central, se observan los siguientes datos consolidados del período anual:</p>
+    <p>• Variación del PIB Real: +4,5% anual (fase expansiva con reactivación de la industria y servicios).</p>
+    <p>• Tasa de Desempleo: 6,2% (reducción progresiva de la desocupación urbana).</p>
+    <p>• Inflación Interanual (IPC): 22,0% (desaceleración de la inflación respecto a períodos previos).</p>
+    <p>• Confianza del Consumidor (ICC): Crecimiento sostenido del +15% en la predisposición a la compra de bienes durables y consumo discrecional.</p>
+  </div>
+  <div class="consigna">En base a la información del escenario planteado, responda minuciosamente:</div>
+
+  <div class="item">
+    <p class="preg"><b>a) Identificación del Ciclo Económico (1,00 pt):</b> Determine en qué fase del ciclo económico se encuentra esta economía. Justifique su diagnóstico asociando el comportamiento del PIB Real (+4,5%), la tasa de desempleo (6,2%) y el nivel de inflación (22,0%) con la conducta esperada del consumo de las familias.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Se encuentra en una fase de expansión esto se respalda bajo el hecho de que la variación del PIB real es de 4,5% interanual, es decir, es significativo el aumento de los bienes y servicios producidos del país, dato que indica un aumento en la productividad y por ende una necesidad de mano de obra para afrontar dicha demanda de productos. Este dato está respaldado con la Tasa de desempleo otorgada que fue del 6,2%, además de esto, la inflación interanual se desaceleró, nos indica que sigue habiendo inflación y es lógico en tiempos de crecimiento debido al aumento de la demanda, pero sí es cierto que la misma no está creciendo a la misma intensidad que lo hacía antes, actualmente se encuentra en torno al 22% respecto a periodos anteriores. Gracias a todo esto, el consumidor se encuentra en una situación de predisposición a compras de bienes a largo plazo ya que confía en que la economía del país va a acompañar y va a poder afrontar sus deudas. Podemos entender que esto es así gracias al dato que dice que hay un crecimiento sostenido en la confianza del consumidor de un 15% a favor.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <p class="preg"><b>b) Formulación de Estrategias de Comercialización/Marketing (1,00 pt):</b> Usted es el Gerente Comercial de una compañía de tecnología y electrodomésticos de consumo. Diseñe DOS acciones comerciales estratégicas (en materia de lanzamiento de productos, política de precios premium, financiamiento o estrategia promocional) para capturar la expansión de la demanda agregada y aumentar la cuota de mercado en esta coyuntura.</p>
+    <div class="resp"><p class="rotulo">Mi respuesta</p>
+      <p>Para una situación como la planteada, en el caso de una compañía tecnológica, buscaría ofrecer financiaciones a largo plazo sin intereses para fomentar las ventas y ofrecería productos de mejor calidad o de calidad premium aunque estos representen un aumento en los precios de mi stock.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+  const botones = document.querySelectorAll('.tabs button');
+  function mostrar(id) {
+    botones.forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === id)));
+    document.querySelectorAll('.examen').forEach(s => s.classList.toggle('activo', s.id === id));
+    try { localStorage.setItem('simulacro-tab', id); } catch (e) {}
+    window.scrollTo(0, 0);
+  }
+  botones.forEach(b => b.addEventListener('click', () => mostrar(b.dataset.tab)));
+  try { const t = localStorage.getItem('simulacro-tab'); if (t && document.getElementById(t)) mostrar(t); } catch (e) {}
+</script>
+</body>
+</html>
