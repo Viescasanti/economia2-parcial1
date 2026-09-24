@@ -147,6 +147,18 @@
     pre.calc{font-size:12.5px}
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
+<style>
+  div.calc{font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:6px 12px;margin:8px 0;overflow-x:auto;overflow-y:hidden}
+  div.calc .katex-display{margin:.35em 0;text-align:left}
+  div.calc .katex-display>.katex{text-align:left}
+  .fbox{font-family:"Newsreader",serif;font-weight:400}
+  .fbox .katex{font-size:1.12em}
+  .fbox small .katex{font-size:1.02em}
+  @media (max-width:560px){div.calc{font-size:12.5px;padding:6px 10px}}
+</style>
 </head>
 <body>
 
@@ -243,7 +255,7 @@
       <p class="h-main"><span class="dot"></span>Modelo OA-DA y demanda agregada<span class="tag">Lección 2 bis</span></p>
       <p class="def"><b>Modelo OA-DA:</b> explica el nivel de precios y de producción de un país. Es un modelo económico: una representación simplificada de la realidad que permite entender y predecir el comportamiento de la economía.</p>
       <p class="def"><b>Demanda agregada (DA):</b> relación entre el <b>NGP</b> y la cantidad total de bienes y servicios <b>demandados</b> en una economía.</p>
-      <div class="fbox">DA = C + I + G + XN<small>C = consumo de las familias · I = inversión de las empresas (maquinaria y técnicas productivas) · G = gasto público · XN = exportaciones netas (X − M)</small></div>
+      <div class="fbox">\(DA = C + I + G + XN\)<small>C = consumo de las familias · I = inversión de las empresas (maquinaria y técnicas productivas) · G = gasto público · XN = exportaciones netas (X − M)</small></div>
       <div class="grid2">
         <div class="mini okk"><b>Pendiente</b><br><b>Negativa</b>: a menor NGP, mayor cantidad demandada (relación inversa).</div>
         <div class="mini danger"><b>Movimiento contra desplazamiento</b><br>Movimiento sobre la curva: varía el NGP. Desplazamiento: varía C, I, G o XN.</div>
@@ -302,11 +314,16 @@
         <li><b>PD:</b> los que no tienen trabajo, pero lo <b>buscan activamente</b> y no lo encuentran.</li>
         <li><b>Desempleo:</b> fracción de la PEA que no puede encontrar empleo.</li>
       </ul>
-      <div class="fbox">PEA = PO + PD<small>Tasa de desempleo = (PD / PEA) × 100</small></div>
+      <div class="fbox">\(PEA = PO + PD\)<small>\(\text{Tasa de desempleo} = \dfrac{PD}{PEA} \times 100\)</small></div>
       <details class="ej" open><summary>Ejemplo</summary><div class="body">
-        <pre class="calc">PO 4.500.000 · PD 500.000
-PEA = 4.500.000 + 500.000 = 5.000.000
-Tasa = 500.000 / 5.000.000 × 100 = 10 %</pre>
+        <div class="calc">\[\begin{aligned}
+&PO = 4.500.000\\
+&PD = 500.000\\[4pt]
+&PEA = PO + PD\\
+&\qquad = 4.500.000 + 500.000 = 5.000.000\\[4pt]
+&\text{Tasa} = \dfrac{PD}{PEA} \times 100\\
+&\qquad = \dfrac{500.000}{5.000.000} \times 100 = 10\,\%
+\end{aligned}\]</div>
       </div></details>
       <div class="note"><b>V/F trampa:</b> "el desempleo cuenta a los que no tienen trabajo, lo busquen o no" es <b>falso</b>: tienen que buscarlo activamente.</div>
     </div>
@@ -330,12 +347,18 @@ Tasa = 500.000 / 5.000.000 × 100 = 10 %</pre>
         <li>Interpretá en una oración.</li>
       </ol>
       <details class="ej" open><summary>Simulacro 1.2a</summary><div class="body">
-        <pre class="calc">DA = 1.600 − 50P      OA = 400 + 30P
-1.600 − 50P = 400 + 30P
-1.600 − 400 = 30P + 50P
-1.200 = 80P  →  P* = 1.200 / 80 = 15
-Y* = 1.600 − 50·15 = 1.600 − 750 = 850
-Verificación: OA = 400 + 30·15 = 850 ✓</pre>
+        <div class="calc">\[\begin{aligned}
+&DA = 1.600 - 50P\\
+&OA = 400 + 30P\\[6pt]
+&1.600 - 50P = 400 + 30P\\
+&1.600 - 400 = 30P + 50P\\
+&1.200 = 80P\\
+&P^* = \dfrac{1.200}{80} = 15\\[6pt]
+&Y^* = 1.600 - 50 \cdot 15\\
+&\qquad = 1.600 - 750 = 850\\
+&\text{Verificación: } OA = 400 + 30 \cdot 15\\
+&\qquad = 850 \;\checkmark
+\end{aligned}\]</div>
         <p>Con un NGP de 15, lo que demandan todos los agentes y lo que ofrecen las empresas coincide en 850 unidades: es el equilibrio macroeconómico de corto plazo.</p>
       </div></details>
       <div class="note"><b>Si P da negativo</b>, la función está mal copiada o despejada: un NGP negativo no tiene sentido. <b>Con decimales</b>, usá dos y verificá.</div>
@@ -351,16 +374,36 @@ Verificación: OA = 400 + 30·15 = 850 ✓</pre>
         <li>Describí el gráfico y nombrá el fenómeno.</li>
       </ol>
       <details class="ej" open><summary>Simulacro 1.2b · shock de oferta</summary><div class="body">
-        <pre class="calc">OA' = 240 + 30P   (la DA no cambia)
-1.600 − 50P = 240 + 30P  →  1.360 = 80P  →  P** = 17
-Y** = 1.600 − 50·17 = 750      Verificación: 240 + 30·17 = 750 ✓
-P: 15 → 17 (↑)      Y: 850 → 750 (↓)</pre>
+        <div class="calc">\[\begin{aligned}
+&OA' = 240 + 30P\\
+&\text{(la DA no cambia)}\\[6pt]
+&1.600 - 50P = 240 + 30P\\
+&1.600 - 240 = 30P + 50P\\
+&1.360 = 80P\\
+&P^{**} = \dfrac{1.360}{80} = 17\\[6pt]
+&Y^{**} = 1.600 - 50 \cdot 17 = 750\\
+&\text{Verificación: } 240 + 30 \cdot 17 = 750 \;\checkmark\\[6pt]
+&P:\ 15 \to 17\ (\uparrow)\\
+&Y:\ 850 \to 750\ (\downarrow)
+\end{aligned}\]</div>
         <p><b>Fenómeno (1.2c):</b> inflación originada por el lado de la oferta (suba de costos) con caída del nivel de actividad.</p>
       </div></details>
       <details class="ej" open><summary>Ejercicio de clase · shock de demanda</summary><div class="body">
-        <pre class="calc">DA = 1.200 − 40P   OA = 300 + 30P  →  P* = 900/70 = 12,86 ; Y* ≈ 685,7
-DA aumenta 100: DA' = 1.300 − 40P  →  P = 1.000/70 = 14,29 ; Y ≈ 728,6
-Suben el precio y la producción.</pre>
+        <div class="calc">\[\begin{aligned}
+&DA = 1.200 - 40P\\
+&OA = 300 + 30P\\
+&1.200 - 300 = 30P + 40P\\
+&900 = 70P\\
+&P^* = \dfrac{900}{70} = 12{,}86\\
+&Y^* \approx 685{,}7\\[6pt]
+&\text{La DA aumenta 100:}\\
+&DA' = 1.300 - 40P\\
+&1.300 - 300 = 70P\\
+&P = \dfrac{1.000}{70} = 14{,}29\\
+&Y \approx 728{,}6\\[6pt]
+&\text{Suben el precio}\\
+&\text{y la producción.}
+\end{aligned}\]</div>
       </div></details>
     </div>
 
@@ -411,10 +454,14 @@ Suben el precio y la producción.</pre>
         <li><b>PIB real:</b> elimina el efecto de la inflación (usa los precios de un año base) y permite saber si la producción aumentó o disminuyó. Es el <b>mejor indicador del crecimiento</b>.</li>
         <li><b>Deflactor del PIB:</b> mide la variación de los precios de todos los bienes y servicios producidos en una economía. También se llama índice de precios implícito.</li>
       </ul>
-      <div class="fbox">PIB real = (PIB nominal / Deflactor) × 100<small>Deflactor = (PIB nominal / PIB real) × 100 · PIB nominal = P actual × Q actual</small></div>
+      <div class="fbox">\(\text{PIB real} = \dfrac{\text{PIB nominal}}{\text{Deflactor}} \times 100\)<small>\(\text{Deflactor} = \dfrac{\text{PIB nominal}}{\text{PIB real}} \times 100\) &nbsp;·&nbsp; \(\text{PIB nominal} = P_{\text{actual}} \times Q_{\text{actual}}\)</small></div>
       <details class="ej" open><summary>Ejercicio de clase</summary><div class="body">
-        <pre class="calc">PIB nominal 700.000 · Deflactor 280
-PIB real = 700.000 / 280 × 100 = 250.000</pre>
+        <div class="calc">\[\begin{aligned}
+&\text{PIB nominal} = 700.000\\
+&\text{Deflactor} = 280\\[4pt]
+&\text{PIB real} = \dfrac{\text{PIB nominal}}{\text{Deflactor}} \times 100\\
+&\qquad = \dfrac{700.000}{280} \times 100 = 250.000
+\end{aligned}\]</div>
       </div></details>
       <div class="note"><b>Cuidado:</b> el deflactor <b>no</b> mide el crecimiento; solo mide cómo variaron los precios.</div>
     </div>
@@ -428,7 +475,7 @@ PIB real = 700.000 / 280 × 100 = 250.000</pre>
         <li><b>Impuestos indirectos (Ti):</b> se agregan a los bienes y servicios (por ejemplo, el IVA). El consumidor no le paga al Estado de forma directa: le paga a la empresa, y la empresa al Estado.</li>
         <li><b>Subvenciones:</b> ayuda económica del Estado (subsidios, exenciones) sin obligación de reembolso.</li>
       </ul>
-      <div class="fbox">PIB pm = PIB cf + Ti − Subv<small>PIB cf = PIB pm − Ti + Subv</small></div>
+      <div class="fbox">\(\text{PIB}_{pm} = \text{PIB}_{cf} + Ti - Subv\)<small>\(\text{PIB}_{cf} = \text{PIB}_{pm} - Ti + Subv\)</small></div>
       <div class="star"><span class="lbl">Lo que exige la profe</span>Si decís solo "es el precio que ve el consumidor", <b>está mal</b>. Primero va la <b>definición del PIB</b> y después "expresado al precio que paga el consumidor". Tampoco lo definas como "precio de costo y precio de venta".</div>
       <div class="note"><b>V/F trampa:</b> "el PIB cf incluye los impuestos indirectos y excluye las subvenciones" es <b>falso</b>: es al revés.</div>
     </div>
@@ -436,7 +483,7 @@ PIB real = 700.000 / 280 × 100 = 250.000</pre>
     <div class="card">
       <p class="h-main"><span class="dot"></span>PNB<span class="tag">Lección 11</span></p>
       <p class="def">Valor de los bienes y servicios finales producidos por factores que pertenecen a <b>residentes nacionales</b>, independientemente de dónde se produzcan.</p>
-      <div class="fbox">PNB = PIB + RRN − RRE<small>RRN = renta de residentes nacionales en el extranjero · RRE = renta de residentes extranjeros en el país</small></div>
+      <div class="fbox">\(\text{PNB} = \text{PIB} + RRN - RRE\)<small>RRN = renta de residentes nacionales en el extranjero · RRE = renta de residentes extranjeros en el país</small></div>
       <div class="grid2">
         <div class="mini okk"><b>PIB</b><br>Lo producido <b>dentro del país</b>, sin importar la nacionalidad.</div>
         <div class="mini danger"><b>PNB</b><br>Lo producido por <b>residentes nacionales</b>, estén donde estén.</div>
@@ -452,7 +499,7 @@ PIB real = 700.000 / 280 × 100 = 250.000</pre>
         <li><b>PNN (economía de 3 sectores: familias, empresas y sector público):</b> el PNB descontada la depreciación.</li>
         <li><b>PNN cf = renta nacional.</b></li>
       </ul>
-      <div class="fbox">PIN = PIB − D  (o PIB = PIN + D)<small>PNN pm = PNB pm − D · PNN cf = PNN pm − Ti + Subv</small></div>
+      <div class="fbox">\(\text{PIN} = \text{PIB} - D \quad (\text{o } \text{PIB} = \text{PIN} + D)\)<small>\(\text{PNN}_{pm} = \text{PNB}_{pm} - D\) &nbsp;·&nbsp; \(\text{PNN}_{cf} = \text{PNN}_{pm} - Ti + Subv\)</small></div>
       <div class="note"><b>V/F trampa:</b> "el PIN es igual al PIB más la depreciación" es <b>falso</b> (es PIB − D). "La renta nacional se obtiene del PNN cf" es <b>verdadero</b>. "En la economía de 3 sectores intervienen las familias, las empresas y el sector externo" es <b>falso</b>: el tercero es el sector público.</div>
     </div>
 
@@ -464,9 +511,9 @@ PIB real = 700.000 / 280 × 100 = 250.000</pre>
         <li><b>Ingreso o renta:</b> suma las rentas que reciben los agentes por prestar sus factores (una vez vendida la producción, se reparte como rentas). Da el <b>cf</b>; después se pasa a pm.</li>
         <li><b>Producción o valor agregado:</b> suma el valor agregado de todos los sectores. Producción bruta = ventas; consumo intermedio = lo que se compra a otras empresas para producir.</li>
       </ul>
-      <div class="fbox">Gasto: PIB pm = C + I + G + (X − M)</div>
-      <div class="fbox">Ingreso: PIB cf = Salarios + Alquileres + Intereses + Beneficios + D<small>luego PIB pm = PIB cf + Ti − Subv</small></div>
-      <div class="fbox">Valor agregado: VA = Producción bruta − Consumo intermedio<small>PIB pm = VAB + Ti − Subv</small></div>
+      <div class="fbox">Gasto: \(\text{PIB}_{pm} = C + I + G + (X - M)\)</div>
+      <div class="fbox">Ingreso: \(\text{PIB}_{cf} = \text{Salarios} + \text{Alquileres} + \text{Intereses} + \text{Beneficios} + D\)<small>luego \(\text{PIB}_{pm} = \text{PIB}_{cf} + Ti - Subv\)</small></div>
+      <div class="fbox">Valor agregado: \(VA = \text{Producción bruta} - \text{Consumo intermedio}\)<small>\(\text{PIB}_{pm} = VAB + Ti - Subv\)</small></div>
     </div>
   </section>
 
@@ -487,19 +534,45 @@ PIB real = 700.000 / 280 × 100 = 250.000</pre>
         <li>(Si lo piden) PNN cf = PNN pm − Ti + Subv = <b>renta nacional</b>.</li>
       </ol>
       <details class="ej" open><summary>Simulacro 2.2 a–c</summary><div class="body">
-        <pre class="calc">C 180.000 · I 55.000 · G 65.000 · X 85.000 · M 70.000 · Ti 35.000 · Subv 8.000
-RRN 6.000 · RRE 11.000 · D 12.000
-
-a) PIB pm = 180.000 + 55.000 + 65.000 + (85.000 − 70.000) = 315.000
-b) PIB cf = 315.000 − 35.000 + 8.000 = 288.000
-c) PNB pm = 315.000 + 6.000 − 11.000 = 310.000
-   PNN pm = 310.000 − 12.000 = 298.000</pre>
+        <div class="calc">\[\begin{aligned}
+&C = 180.000 \quad I = 55.000\\
+&G = 65.000 \quad X = 85.000\\
+&M = 70.000 \quad Ti = 35.000\\
+&Subv = 8.000 \quad RRN = 6.000\\
+&RRE = 11.000 \quad D = 12.000\\[8pt]
+&\textbf{a) } \text{PIB}_{pm} = C + I + G\\
+&\qquad + (X - M)\\
+&\text{PIB}_{pm} = 180.000 + 55.000\\
+&\qquad + 65.000 + (85.000 - 70.000)\\
+&\text{PIB}_{pm} = 300.000 + 15.000\\
+&\qquad = 315.000\\[8pt]
+&\textbf{b) } \text{PIB}_{cf} = \text{PIB}_{pm}\\
+&\qquad - Ti + Subv\\
+&\text{PIB}_{cf} = 315.000 - 35.000 + 8.000\\
+&\qquad = 288.000\\[8pt]
+&\textbf{c) } \text{PNB}_{pm} = \text{PIB}_{pm}\\
+&\qquad + RRN - RRE\\
+&\text{PNB}_{pm} = 315.000 + 6.000 - 11.000\\
+&\qquad = 310.000\\[4pt]
+&\text{PNN}_{pm} = \text{PNB}_{pm} - D\\
+&\qquad = 310.000 - 12.000\\
+&\qquad = 298.000
+\end{aligned}\]</div>
         <p><b>b) Por qué los Ti distorsionan:</b> suben el precio de mercado, pero ese monto no lo reciben los factores de producción, sino el Estado.</p>
       </div></details>
       <details class="ej" open><summary>Ejercicio de clase · PNN (3 sectores)</summary><div class="body">
-        <pre class="calc">PNB pm 520 M · D 30 M · IVA 25 M · Subv 5 M
-PNN pm = 520 − 30 = 490 M
-PNN cf = 490 − 25 = 465 M   (clave de la cátedra; con Subv: 470 M)</pre>
+        <div class="calc">\[\begin{aligned}
+&\text{PNB}_{pm} = 520\text{ M}\\
+&D = 30\text{ M}\\
+&IVA = 25\text{ M}\\
+&Subv = 5\text{ M}\\[6pt]
+&\text{PNN}_{pm} = \text{PNB}_{pm} - D\\
+&\qquad = 520 - 30 = 490\text{ M}\\
+&\text{PNN}_{cf} = \text{PNN}_{pm} - Ti\\
+&\qquad = 490 - 25 = 465\text{ M}\\
+&\text{(clave de la cátedra)}\\
+&\text{Con Subv: } 490 - 25 + 5 = 470\text{ M}
+\end{aligned}\]</div>
         <p>Se resta la depreciación para pasar de bruto a neto (mantener la capacidad productiva). Se restan los Ti para valorar a costo de factores, porque el IVA va al Estado.</p>
       </div></details>
       <div class="note"><b>Errores comunes:</b> usar T (impuestos personales) en lugar de Ti · invertir RRN y RRE · partir del PIB cf para calcular el PNB.</div>
@@ -508,12 +581,17 @@ PNN cf = 490 − 25 = 465 M   (clave de la cátedra; con Subv: 470 M)</pre>
     <div class="card">
       <p class="h-main"><span class="dot"></span>La igualdad A − I = (G + TR − T) + XN<span class="tag">Lección 13</span></p>
       <p class="def"><b>Cuatro sectores:</b> familias, empresas, sector público y sector externo (las relaciones económicas con otros países).</p>
-      <div class="fbox">A − I = (G + TR − T) + XN<small>A = ahorro · I = inversión · G = gasto público · TR = transferencias · T = impuestos personales · XN = X − M</small></div>
+      <div class="fbox">\(A - I = (G + TR - T) + XN\)<small>A = ahorro · I = inversión · G = gasto público · TR = transferencias · T = impuestos personales · XN = X − M</small></div>
       <details class="ej"><summary>De dónde sale (no hace falta despejarla)</summary><div class="body">
-        <pre class="calc">P = DA = C + I + G + XN
-Yd = Y + TR − T      C + A = Yd  →  C = Y + TR − T − A
-Se reemplaza C en P, y como lo producido es igual a la renta generada:
-A − I = (G + TR − T) + XN</pre>
+        <div class="calc">\[\begin{aligned}
+&P = DA = C + I + G + XN\\
+&Yd = Y + TR - T\\
+&C + A = Yd\\
+&C = Yd - A = Y + TR - T - A\\
+&\text{Se reemplaza C en P}\\
+&\text{(lo producido = renta generada):}\\
+&A - I = (G + TR - T) + XN
+\end{aligned}\]</div>
       </div></details>
       <div class="tbl-scroll"><table class="eco">
         <thead><tr><th>Parte</th><th>Sector</th><th>Signo</th></tr></thead>
@@ -528,16 +606,35 @@ A − I = (G + TR − T) + XN</pre>
       <p class="h-sub">Paso a paso</p>
       <ol><li>Escribí la igualdad y reemplazá.</li><li>Calculá XN y (G + TR − T) por separado.</li><li>Despejá la incógnita.</li><li>Interpretá el signo de cada sector.</li></ol>
       <details class="ej" open><summary>Simulacro 2.2d · despejar A</summary><div class="body">
-        <pre class="calc">XN = 85.000 − 70.000 = 15.000
-G + TR − T = 65.000 + 20.000 − 45.000 = 40.000   (positivo: déficit público)
-A − I = 40.000 + 15.000 = 55.000
-A = 55.000 + 55.000 = 110.000</pre>
+        <div class="calc">\[\begin{aligned}
+&XN = X - M\\
+&\qquad = 85.000 - 70.000 = 15.000\\
+&G + TR - T\\
+&\qquad = 65.000 + 20.000 - 45.000\\
+&\qquad = 40.000\\
+&\text{(positivo: déficit)}\\[6pt]
+&A - I = (G + TR - T) + XN\\
+&\qquad = 40.000 + 15.000 = 55.000\\
+&A = 55.000 + I\\
+&\qquad = 55.000 + 55.000 = 110.000
+\end{aligned}\]</div>
         <p>El sector privado ahorra 55.000 más de lo que invierte, y ese ahorro financia el déficit público y el superávit externo.</p>
       </div></details>
       <details class="ej" open><summary>Ejercicio de clase · despejar T</summary><div class="body">
-        <pre class="calc">A 80 · I 75 · G 110 · TR 50 · X 130 · M 95   (millones)
-A − I = 5 ;  XN = 35
-5 = 110 + 50 − T + 35  →  5 = 195 − T  →  T = 190 M</pre>
+        <div class="calc">\[\begin{aligned}
+&A = 80\\
+&I = 75\\
+&G = 110\\
+&TR = 50\\
+&X = 130\\
+&M = 95\\
+&\text{(millones)}\\[6pt]
+&A - I = 80 - 75 = 5\\
+&XN = 130 - 95 = 35\\
+&5 = (110 + 50 - T) + 35\\
+&5 = 195 - T\\
+&T = 195 - 5 = 190\text{ M}
+\end{aligned}\]</div>
       </div></details>
       <div class="star"><span class="lbl">Ojo con el signo</span>En clase se dijo al revés una vez. Vale esto: <b>G + TR − T positivo = déficit</b>, porque el Estado gasta más de lo que recauda.</div>
     </div>
@@ -549,19 +646,29 @@ A − I = 5 ;  XN = 35
       <div class="unit-titles"><p class="u-kicker">Para tu hoja de fórmulas</p><h2>Formulero</h2></div></div>
     <span class="unit-weight">Solo símbolos, sin explicar qué significa cada letra</span>
     <div class="card">
-      <pre class="calc">DA = OA  →  P*, Y*   (verificar en las dos)
-PEA = PO + PD          Tasa de desempleo = (PD / PEA) × 100
-PIB nominal = P actual × Q actual
-PIB real = (PIB nominal / Deflactor) × 100      Deflactor = (PIB nominal / PIB real) × 100
-PIB pm = C + I + G + (X − M)
-PIB cf = PIB pm − Ti + Subv      PIB pm = PIB cf + Ti − Subv
-PIB cf = Sal + Alq + Int + Ben + D
-VA = PB − CI      PIB pm = VAB + Ti − Subv
-PNB = PIB + RRN − RRE
-PIB = PIN + D
-PNN pm = PNB pm − D      PNN cf = PNN pm − Ti (+ Subv)
-XN = X − M      Yd = Y + TR − T      C + A = Yd
-A − I = (G + TR − T) + XN</pre>
+      <div class="calc">\[\begin{aligned}
+&DA = OA \;\Rightarrow\; P^*,\ Y^*\\
+&\text{(verificar en las dos)}\\
+&PEA = PO + PD\\
+&TD = \dfrac{PD}{PEA} \times 100\\
+&\text{PIB}_{nom} = P_{act} \times Q_{act}\\
+&\text{PIB}_{real} = \dfrac{\text{PIB}_{nom}}{\text{Def}} \times 100\\
+&\text{Def} = \dfrac{\text{PIB}_{nom}}{\text{PIB}_{real}} \times 100\\
+&\text{PIB}_{pm} = C + I + G + (X - M)\\
+&\text{PIB}_{cf} = \text{PIB}_{pm} - Ti + Subv\\
+&\text{PIB}_{pm} = \text{PIB}_{cf} + Ti - Subv\\
+&\text{PIB}_{cf} = Sal + Alq + Int + Ben + D\\
+&VA = PB - CI\\
+&\text{PIB}_{pm} = VAB + Ti - Subv\\
+&\text{PNB} = \text{PIB} + RRN - RRE\\
+&\text{PIB} = \text{PIN} + D\\
+&\text{PNN}_{pm} = \text{PNB}_{pm} - D\\
+&\text{PNN}_{cf} = \text{PNN}_{pm} - Ti + Subv\\
+&XN = X - M\\
+&Yd = Y + TR - T\\
+&C + A = Yd\\
+&A - I = (G + TR - T) + XN
+\end{aligned}\]</div>
     </div>
   </section>
   </div><!-- /view-resumen -->
@@ -585,7 +692,7 @@ A − I = (G + TR − T) + XN</pre>
 
 <script>
   /* ============ AUTO-ACTUALIZADOR ============ */
-  const BUILD='2026-09-24-2';
+  const BUILD='2026-09-24-5';
   async function checkUpdate(){
     try{
       const r=await fetch(location.pathname+'?_cb='+Math.floor(Date.now()/30000),{cache:'no-store'});
@@ -607,6 +714,9 @@ A − I = (G + TR − T) + XN</pre>
     const c=chips[e.target.id];if(c){c.style.background='var(--ink)';c.style.color='var(--paper)';}
   }})},{rootMargin:'-45% 0px -50% 0px'});
   document.querySelectorAll('section.unit').forEach(s=>spy.observe(s));
+
+  /* ============ KATEX ============ */
+  document.addEventListener('DOMContentLoaded',()=>{if(window.renderMathInElement)renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});});
 
   /* ============ BANCO DE PREGUNTAS ============ */
   const EC=[
